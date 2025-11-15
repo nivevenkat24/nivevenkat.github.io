@@ -55,6 +55,7 @@ function showProjectModal(p) {
       ${section('Focus', p.focus)}
       ${section('Target Users', p.target_users)}
       ${section('Impact', p.impact)}
+      ${section('Future Enhancements', p.future || p.future_enhancements)}
       ${links(p.links)}
     </div>
   `);
@@ -83,4 +84,3 @@ function links(items) {
     </div>
   `;
 }
-

@@ -17,7 +17,7 @@ function parseSimpleText(txt) {
   let currentKey = null;
   const arrayKeys = new Set([
     'highlights', 'interests', 'stack', 'focus', 'target_users', 'impact',
-    'skills', 'experience', 'education', 'links', 'tags'
+    'skills', 'experience', 'education', 'links', 'tags', 'future', 'future_enhancements'
   ]);
 
   const isKeyLine = (line) => /^([A-Za-z0-9_\- ]+):\s*(.*)$/.test(line);
@@ -117,4 +117,3 @@ main().catch((err) => {
   console.error(err);
   process.exit(1);
 });
-

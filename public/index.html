@@ -14,18 +14,24 @@
           <img src="assets/logo.svg" alt="Nive Venkat" class="logo-img" />
           <a href="#/about" class="brand-name">Nive Venkat</a>
         </div>
-        <nav class="tabs">
-          <a href="#/about" data-route="about" class="tab">About Me</a>
-          <a href="#/projects" data-route="projects" class="tab">Projects</a>
-          <a href="#/resume" data-route="resume" class="tab">Resume</a>
-          <span class="tab-underline" aria-hidden="true"></span>
-        </nav>
+        <div class="actions">
+          <nav class="tabs">
+            <a href="#/about" data-route="about" class="tab">About Me</a>
+            <a href="#/projects" data-route="projects" class="tab">Projects</a>
+            <a href="#/resume" data-route="resume" class="tab">Resume</a>
+            <span class="tab-underline" aria-hidden="true"></span>
+          </nav>
+          <button id="themeToggle" class="icon-button" aria-label="Toggle theme">
+            <img id="themeIcon" src="assets/icons/moon.svg" alt="Theme" />
+          </button>
+        </div>
       </div>
     </header>
     <main id="app" class="container"></main>
     <footer class="site-footer container">
       <p>© <span id="year"></span> Nive Venkat. All rights reserved.</p>
     </footer>
+    <script type="module" src="scripts/theme.js"></script>
     <script type="module" src="scripts/app.js"></script>
   </body>
   </html>
