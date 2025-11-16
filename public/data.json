@@ -70,29 +70,43 @@
       "-_demo": "",
       "-_repo": "",
       "slug": "salessense-ai"
+    },
+    {
+      "title": "Understand AI",
+      "subtitle": "Real-time sales intelligence agent (RAG + automation)",
+      "tags": [
+        "n8n",
+        "openai",
+        "engineering",
+        "ollama"
+      ],
+      "image": "assets/images/projects/sales-sense-ai.png",
+      "overview": "### **Overview**\nA RAG-powered AI agent that analyzes sales files, embeds them into a vector database, and enables conversational analysis of KPIs, performance trends, and competitor insights.\n---\n### **Problem**\nSales ops teams deal with scattered PDFs, Excel files, and decks. Answering even basic questions about growth or retention requires time-consuming manual work.\n### **Architecture Diagram (Sales RAG System)**\n```mermaid\nflowchart LR\nA[Drive Folder] --> B[n8n Ingestion Pipeline]\nB --> C[Embedding Pipeline]\nC --> D[Vector DB]\nD --> E[LLM Answer Engine]\nE --> F[Chat UI]\n```\n---\n### **Tech Stack**\n- Python\n- n8n automation\n- Pinecone\n- LangChain\n- GPT models\n- Streamlit UI\n---\n### **Key Challenges**\n- Normalizing unstructured sales files\n- Ensuring accurate KPI extraction\n- Updating embeddings as new files arrive\n- Avoiding hallucinations when data is missing\n---\n### **What I Learned**\n- How to operationalize data ingestion for business users\n- How RAG behaves with structured vs. unstructured data\n- How to design explainability into business AI tools\n- How to balance transparency with speed\n---",
+      "links": [],
+      "-_demo": "",
+      "-_repo": "",
+      "slug": "understand-ai"
     }
   ],
   "resume": {
-    "summary": "Engineer-turned-MBA specializing in business analytics, strategy, and AI-enabled product development. Blends systems thinking from structural engineering with data-driven decision-making and product execution. Open to roles in product management, strategy/ops, and applied AI.",
+    "tagline": "Engineer-turned-strategist building AI-enabled products",
+    "summary": "Engineer-turned-strategist with 7+ years of experience designing complex infrastructure systems and building AI-enabled products. Combines structural engineering rigor with business analytics, product thinking, and hands-on AI development. Currently completing an MBA at NYU Stern, specializing in Business Analytics, Strategy, and Technology Product Management.",
+    "download": "assets/resume/Nive_Venkat.pdf",
     "skills": [
-      "Product strategy and execution",
-      "Business analytics and experimentation",
-      "AI/LLM apps (RAG, custom GPTs)",
-      "Workflow automation (n8n)",
-      "Python, Streamlit",
-      "Vector DBs (ChromaDB, Pinecone)",
-      "Prompt design and evaluation",
-      "Data storytelling and communication"
+      "Structural Engineering & Technical: STAAD Pro, RAM, ETABS, ANSYS, RISA-3D, AutoCAD, Revit, MicroStation, BIM, ENERCALC, SAP2000, MathCAD, ACI/AISC/ASCE Standards, QA/QC",
+      "Business & Strategy (MBA Coursework): Strategy, Operations Management, Tech Product Management, Digital Strategy, Corporate Finance, Financial Accounting, Marketing, Leadership, Negotiation, Decision Models",
+      "AI & Product Management: AI/LLM Systems, RAG, Custom GPTs, AI Agents, Prompt Engineering, Product Discovery, User Research, Product Roadmapping, MVP Scoping, Competitive Analysis, KPI Design, LangChain, Streamlit, n8n Automation, ChromaDB, Pinecone",
+      "Data & Analytics: SQL, Power BI, Tableau, Python, R Studio, Excel, MATLAB, C++, Statistics, Data Visualization, Digital Marketing Analytics, AI Applications in Business"
     ],
     "experience": [
-      "Structural Engineer — Designed and managed water infrastructure projects with cross-functional coordination and rigorous calculation/QA workflows.",
-      "Graduate Projects — Led/assisted AI-driven product design, carbon credit pricing models, and digital transformation (sustainability focus)."
+      "Structural Engineer — Carollo Engineers | Designed & managed multimillion-dollar water infrastructure projects; led cross-discipline coordination, construction support, and QA workflows; built dashboards and analytics tools used by design leadership; improved design review cycle time through data-driven process improvements.",
+      "Graduate Projects | NYU Stern School of Business; **Understand.AI — AI Meeting Memory Product* ; - Designed LLM-powered meeting intelligence system; - Conducted user research & validation with engineering teams; - Built UX flows, trust features, and product strategy; **Tao Climate — Carbon Removal Pricing Strategy* ; - Developed pricing strategy for hemp-based carbon credits; - Modeled airline willingness-to-pay & competitive positioning; - Presented recommendations at Google NY; **Morningstar — Climate Index Strategy* ; - Built index methodology using Sustainalytics ESG data; - Modeled climate-aligned weighting scheme"
     ],
     "education": [
-      "MBA, NYU Stern — Business Analytics, Strategy, Tech Product Management (2023–present)",
-      "B.E./B.S. in Civil/Structural Engineering"
-    ],
-    "download": "assets/resume/Nive_Venkat.pdf"
+      "MBA — Business Analytics, Strategy, Tech Product Management | NYU Stern School of Business (2023–2026)",
+      "MS — Structural/Environmental Engineering | Arizona State University",
+      "BE — Civil Engineering | Anna University"
+    ]
   },
-  "generatedAt": "2025-11-16T04:23:35.164Z"
+  "generatedAt": "2025-11-16T05:21:27.869Z"
 }

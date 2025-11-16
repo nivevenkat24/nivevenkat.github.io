@@ -110,6 +110,9 @@ main#app { padding: 40px 0 80px; }
 .section h2 { margin: 0 0 12px; font-size: 22px; }
 .list { display: grid; gap: 10px; }
 .list li { color: var(--muted); }
+.list.tight { padding-left: 20px; list-style: disc; gap: 6px; }
+.list.tight li { color: var(--text); }
+.list.tight.child { padding-left: 18px; list-style: disc; margin-top: 4px; }
 
 .resume-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .button { display: inline-flex; align-items: center; gap: 8px; color: #ffffff; font-weight: 600; text-decoration: none; background: linear-gradient(135deg, var(--accent), var(--accent-2)); border-radius: 12px; padding: 10px 14px; border: 0; }
@@ -119,6 +122,31 @@ main#app { padding: 40px 0 80px; }
 .project-image { image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges; }
 .project-modal-img { width: 100%; max-height: 340px; object-fit: contain; border-radius: 12px; margin: 12px 0; background: var(--image-bg); border: 1px solid var(--card-border); }
 .project-demo-img { width: 100%; max-height: 340px; object-fit: contain; border-radius: 12px; margin: 8px 0 14px; background: var(--image-bg); border: 1px solid var(--card-border); }
+
+.resume-hero { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 0 4px; }
+.resume-hero .title { margin: 0; font-size: 32px; }
+.resume-hero .subtitle { margin: 4px 0 0; font-size: 16px; color: var(--muted); }
+.resume-hero-actions { display: flex; align-items: center; gap: 8px; }
+.resume-summary { margin: 0; padding: 16px 18px; }
+.resume-summary .markdown-body { color: var(--text); }
+
+.skills-stack { display: grid; gap: 16px; }
+.skills-group h2 { margin: 0 0 8px; font-size: 17px; color: #0ea5a5; }
+.skills-group h3 { margin: 0 0 8px; font-size: 17px; color: #0ea5a5; }
+.tone-a { background: #e8f4ff; border-color: #d7e9ff; color: #0b5fb3; }
+.tone-b { background: #e8f9f0; border-color: #c8f0dc; color: #0f8a6c; }
+.tone-c { background: #fff4e5; border-color: #ffe3c4; color: #c56b00; }
+.tone-d { background: #ffe8f1; border-color: #ffd6e7; color: #ad2c72; }
+
+.experience-list { display: grid; gap: 16px; }
+.resume-card { background: #f9fbff; border: 1px solid #cfd9e3; border-radius: 14px; padding: 14px 16px; box-shadow: 0 14px 32px rgba(15, 23, 42, 0.08); }
+.resume-card h2 { margin: 0 0 4px; color: #0ea5a5; }
+.resume-card h3 { margin: 0 0 4px; color: #0ea5a5; }
+.resume-card p { margin: 0 0 6px; color: #475569; }
+.resume-card ul { margin: 8px 0 0; padding-left: 18px; color: var(--text); display: grid; gap: 6px; }
+.resume-card li { color: var(--text); }
+.resume-card strong { color: #0f172a; font-weight: 700; }
+.resume-card em { color: var(--muted); font-style: normal; font-weight: 600; }
 
 .muted { color: var(--muted); }
 
