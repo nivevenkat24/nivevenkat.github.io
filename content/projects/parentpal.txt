@@ -1,56 +1,56 @@
-👶 ParentPal Bot — Custom GPT
-Copy Project Link
- Custom GPT
- Parenting Support • Medical Resource Guidance • Child Health Education
+title: ParentPal – Custom GPT
+subtitle: AI knowledge assistant for seismic design (RAG)
+tags:
+- openai
+- customGPT
+image: assets/images/projects/parentpal-gpt.png
+overview: 
+### *Overview*
 
-🍼 Overview
-A custom GPT designed to support new parents with trustworthy, evidence-based information about child health, safety, and development.
-The bot guides users to reliable resources from the American Academy of Pediatrics (AAP) via HealthyChildren.org, helping parents make informed decisions on topics like feeding, sleep, milestones, and safety.
-It answers questions with warmth, clarity, and verified links, offering reassurance while avoiding misinformation — especially valuable for first-time parents navigating early childcare decisions.
+ParentPal is an empathetic, safety-aligned AI parenting assistant grounded entirely in HealthyChildren.org (American Academy of Pediatrics). It delivers reliable, age-appropriate guidance for new parents.
+---
 
-⚙️ Stack & Technical Work
-Built using OpenAI’s Custom GPT builder, with carefully crafted system instructions and safety filters:
-🔍 Strict source querying: Every response references HealthyChildren.org content.
+### **Problem**
 
+Parents are overwhelmed by contradictory online information. They need trusted, source-based advice—and AI models require strict guardrails to avoid unsafe recommendations.---
 
-💬 Empathetic & structured tone: Uses friendly language, clear formatting, and emojis.
+Architecture Diagram (Custom GPT with Safety Layer)
 
+```mermaid
+flowchart LR
+  User --> GPT[Custom GPT]
+  GPT --> Rules["System Prompt: Safety + AAP-only Sources"]
+  Rules --> Healthy[HealthyChildren.org Articles]
+  Healthy --> GPT
+  GPT --> User
+```
+---
+### **Tech Stack**
 
-🛑 Scope guardrails: Politely redirects users to their pediatrician for out-of-scope topics.
+- OpenAI Custom GPT builder
+- Safety guardrails + structured prompts
+- HealthyChildren.org
+- Retrieval constraints
 
+---
 
-🌐 Bilingual awareness: Promotes the full Spanish-language version (“¡Todo el sitio web está disponible en Español!” 🇪🇸).
+### **Key Challenges**
+- Enforcing strict guardrails for medical-adjacent topics
+- Designing empathetic yet factual responses
+- Ensuring citations map to approved AAP content
+- Maintaining consistency across age groups
 
+---
 
-🧭 Age-based navigation: Newborn 👶 | Infant 🍼 | Toddler 🚼 | Preschooler 🎨 | Teen 🧑‍🎓
+### **What I Learned**
+- How to design AI for safety-critical domains
+- How to structure system prompts with constraints
+- How to build trust through transparency
+- How empathy shapes UX in family-oriented tools
 
-
-Future enhancements: integration with web connectors for dynamic article retrieval, and improved contextual recall for ongoing parent–child discussions.
-
-💡 Focus
-Identified a need for trustworthy parenting chatbots that reduce anxiety and misinformation while providing quick, verified guidance.
-The MVP is structured around three pillars:
-Evidence-Based Guidance – Only cites AAP-verified medical sources.
-
-
-Empathy & Clarity – Friendly tone and simple explanations.
-
-
-Accessibility & Trust – Fast answers, reliable links, and bilingual support.
-
-
-User Personas:
-👩‍🍼 First-time parents seeking reassurance
-
-
-👨‍👩‍👧 Families looking for development-stage tips
-
-
-👩‍⚕️ Childcare workers or educators referencing AAP guidance
-
-
-Includes built-in trust markers (“Always check with your pediatrician”) and compliance filters to maintain medical reliability and ethical accuracy.
+---
+demo_gif: assets/images/projects/parentpal-gpt-demo.gif
 
 links:
-- demo: https://chatgpt.com/g/g-690a6ecab4bc8191b85495143ac13d78-parentpal
+- demo: 
 - repo: 

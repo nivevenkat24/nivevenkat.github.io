@@ -59,6 +59,7 @@ flowchart LR
 - How to enforce accuracy and grounding in engineering workflows  
 
 ---
+demo_gif: assets/images/projects/fema-companion.gif
 
 links:
 - demo: 

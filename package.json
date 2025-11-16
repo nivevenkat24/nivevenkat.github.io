@@ -4,8 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/build-content.mjs",
-    "dev": "npx --yes serve -l 5173 public"
+    "build": "npm run css && node scripts/build-content.mjs",
+    "css": "tailwindcss -c tailwind.config.js -i ./src/styles/input.css -o ./public/styles/main.css --minify",
+    "dev": "npx --yes serve -l 5173 public",
+    "dev:css": "tailwindcss -c tailwind.config.js -i ./src/styles/input.css -o ./public/styles/main.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.13"
   }
 }
-

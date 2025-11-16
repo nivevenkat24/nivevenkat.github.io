@@ -1,9 +1,11 @@
-name: Nive Venkat
-tagline: Structural Engineer → NYU Stern MBA (Business Analytics, Strategy, Technology Product Management)
+name: I'm Nive!
+tagline: Engineer, AI builder, MBA candidate, and Mom.
 image: assets/images/headshot.jpg
 bio: 
 ---
-Hi! I’m **Nive** — engineer, AI builder, MBA candidate, and mom — and I’m happy you’re here. I started my career as a Structural Engineer, designing and managing water infrastructure systems that quietly keep entire cities running. What drew me to engineering back then is still true today: I love breaking down complexity, making sense of data, and building systems that work in the real world.
+Structural Engineer → NYU Stern MBA (Business Analytics, Strategy, Technology Product Management). 
+
+I started my career as a Structural Engineer, designing and managing water infrastructure systems that quietly keep entire cities running. What drew me to engineering back then is still true today: I love breaking down complexity, making sense of data, and building systems that work in the real world.
 
 In 2023, I began my MBA at **NYU Stern**, specializing in Business Analytics, Strategy, and Technology Product Management. That’s where my curiosity for AI really took off. I became fascinated by how engineering logic, product thinking, and data-driven decision-making come together to create smarter, more resilient organizations.
 

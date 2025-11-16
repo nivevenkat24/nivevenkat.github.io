@@ -53,9 +53,10 @@ function showProjectModal(p) {
         <h3 style="margin:0">${p.title || ''}</h3>
         <button class="button" id="closeModal">Close</button>
       </div>
-      ${p.image ? `<img class='project-image' src='${p.image}' alt='' style='width:100%;height:260px;object-fit:cover;border-radius:12px;margin:12px 0;' />` : ''}
+      ${p.image ? `<img class='project-image project-modal-img' src='${p.image}' alt='${p.title || ''}' />` : ''}
       ${(p.tags || []).length ? `<div class='chips' style='margin:6px 0 10px;'>${(p.tags || []).map(t => `<span class='chip'>${renderInlineMarkdown(t)}</span>`).join('')}</div>` : ''}
       ${p.overview ? `<div class='muted'>${renderMarkdown(p.overview)}</div>` : ''}
+      ${p.demo_gif || p.gif ? `<img class='project-image project-demo-img' src='${p.demo_gif || p.gif}' alt='${p.title || ''} demo' />` : ''}
       ${section('Stack', p.stack)}
       ${section('Focus', p.focus)}
       ${section('Target Users', p.target_users)}
@@ -76,7 +77,7 @@ function section(title, arr) {
   return `
     <div class='section'>
       <h2>${title}</h2>
-      <ul class='list'>${arr.map(i => `<li>${renderInlineMarkdown(i)}</li>`).join('')}</ul>
+      <div class='chips wrap'>${arr.map(i => `<span class='chip chip-muted'>${renderInlineMarkdown(i)}</span>`).join('')}</div>
     </div>
   `;
 }

@@ -14,15 +14,18 @@ export async function renderAbout(root) {
   root.innerHTML = '';
 
   const hero = el(`
-    <section class="hero">
-      <div class="card glass">
+    <section class="hero hero-stacked full-bg">
+      <div class="card glass hero-copy">
+        <div class="kicker">Hello</div>
         <h1 class="title">${name}</h1>
         <p class="subtitle">${tagline}</p>
-        ${bio}
         <div class="chips"></div>
       </div>
-      <div>
+      <div class="hero-media">
         <img src="${img}" alt="${name}" />
+      </div>
+      <div class="card glass about-body">
+        ${bio}
       </div>
     </section>
   `);
@@ -35,15 +38,15 @@ export async function renderAbout(root) {
   });
 
   if (about.interests && about.interests.length) {
-    const interests = el(`
+    const roles = el(`
       <section class="section">
-        <h2>Interests</h2>
-        <ul class="list">
-          ${(about.interests || []).map(i => `<li>${renderInlineMarkdown(i)}</li>`).join('')}
-        </ul>
+        <h2>Open to roles in:</h2>
+        <div class="chips wrap">
+          ${(about.interests || []).map(i => `<span class="chip chip-muted">${renderInlineMarkdown(i)}</span>`).join('')}
+        </div>
       </section>
     `);
-    root.appendChild(interests);
+    root.appendChild(roles);
   }
 
   renderMermaidIn(root);

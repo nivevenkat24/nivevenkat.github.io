@@ -1,20 +1,11 @@
 {
   "about": {
-    "name": "Nive Venkat",
-    "tagline": "Structural Engineer → NYU Stern MBA (Business Analytics, Strategy, Technology Product Management)",
+    "name": "I'm Nive!",
+    "tagline": "Engineer, AI builder, MBA candidate, and Mom.",
     "image": "assets/images/headshot.jpg",
-    "bio": "---\nHi! I’m **Nive** — engineer, AI builder, MBA candidate, and mom — and I’m happy you’re here. I started my career as a Structural Engineer, designing and managing water infrastructure systems that quietly keep entire cities running. What drew me to engineering back then is still true today: I love breaking down complexity, making sense of data, and building systems that work in the real world.\nIn 2023, I began my MBA at **NYU Stern**, specializing in Business Analytics, Strategy, and Technology Product Management. That’s where my curiosity for AI really took off. I became fascinated by how engineering logic, product thinking, and data-driven decision-making come together to create smarter, more resilient organizations.\nSince then, I’ve worked on projects ranging from AI-powered product design and climate-tech pricing models to construction-tech strategy and machine learning workflows. Across every space, one thing stays the same: I love turning ambiguity into structure, and structure into solutions people actually use.\nMotherhood has added an unexpected and meaningful layer to my journey. Balancing a full-time career, graduate school, and raising a tiny human taught me resilience, empathy, and the power of small, consistent progress. It changed how I lead, how I build, and what I value in the work I choose to do.\nOutside of work, you’ll find me baking something sweet, hiking with my family, or inventing new toddler activities for my son. You’ll also find me experimenting with AI tools and side projects — anything that blends curiosity with creativity and makes everyday life a little smarter or more joyful.\n---\n### _**The Real Summary**_\n_I design water systems by day, build AI tools by night, and chase a toddler in between._\n_If there’s a messy business problem, I’ll break it down._\n_If there’s data, I’ll analyze it._\n_And if there’s an opportunity to use AI to make life easier, I’m already building it._\n---\nI also love connecting with people on similar paths. I regularly mentor students exploring engineering, product, AI, studying abroad, or making early-career decisions. I enjoy helping early-stage startups think through ideas, and I support NGOs and mission-driven teams whenever I can.\nIf you’d like to chat, brainstorm, or explore mentorship, feel free to book a time — I’m usually available on weekends:\n👉 **[Book a meeting with me](https://calendar.app.google/F2uy288Db6Jw7Mft8)**\nI’m excited for what comes next and grateful that our paths crossed here.\n---"
+    "bio": "---\nStructural Engineer → NYU Stern MBA (Business Analytics, Strategy, Technology Product Management).\nI started my career as a Structural Engineer, designing and managing water infrastructure systems that quietly keep entire cities running. What drew me to engineering back then is still true today: I love breaking down complexity, making sense of data, and building systems that work in the real world.\nIn 2023, I began my MBA at **NYU Stern**, specializing in Business Analytics, Strategy, and Technology Product Management. That’s where my curiosity for AI really took off. I became fascinated by how engineering logic, product thinking, and data-driven decision-making come together to create smarter, more resilient organizations.\nSince then, I’ve worked on projects ranging from AI-powered product design and climate-tech pricing models to construction-tech strategy and machine learning workflows. Across every space, one thing stays the same: I love turning ambiguity into structure, and structure into solutions people actually use.\nMotherhood has added an unexpected and meaningful layer to my journey. Balancing a full-time career, graduate school, and raising a tiny human taught me resilience, empathy, and the power of small, consistent progress. It changed how I lead, how I build, and what I value in the work I choose to do.\nOutside of work, you’ll find me baking something sweet, hiking with my family, or inventing new toddler activities for my son. You’ll also find me experimenting with AI tools and side projects — anything that blends curiosity with creativity and makes everyday life a little smarter or more joyful.\n---\n### _**The Real Summary**_\n_I design water systems by day, build AI tools by night, and chase a toddler in between._\n_If there’s a messy business problem, I’ll break it down._\n_If there’s data, I’ll analyze it._\n_And if there’s an opportunity to use AI to make life easier, I’m already building it._\n---\nI also love connecting with people on similar paths. I regularly mentor students exploring engineering, product, AI, studying abroad, or making early-career decisions. I enjoy helping early-stage startups think through ideas, and I support NGOs and mission-driven teams whenever I can.\nIf you’d like to chat, brainstorm, or explore mentorship, feel free to book a time — I’m usually available on weekends:\n👉 **[Book a meeting with me](https://calendar.app.google/F2uy288Db6Jw7Mft8)**\nI’m excited for what comes next and grateful that our paths crossed here.\n---"
   },
   "projects": [
-    {
-      "future_enhancements": [],
-      "the_mvp_is_structured_around_three_pillars": "Evidence-Based Guidance – Only cites AAP-verified medical sources.\nEmpathy & Clarity – Friendly tone and simple explanations.\nAccessibility & Trust – Fast answers, reliable links, and bilingual support.",
-      "user_personas": "👩‍🍼 First-time parents seeking reassurance\n👨‍👩‍👧 Families looking for development-stage tips\n👩‍⚕️ Childcare workers or educators referencing AAP guidance\nIncludes built-in trust markers (“Always check with your pediatrician”) and compliance filters to maintain medical reliability and ethical accuracy.",
-      "links": [],
-      "-_demo": "https://chatgpt.com/g/g-690a6ecab4bc8191b85495143ac13d78-parentpal",
-      "-_repo": "",
-      "slug": "parentpal"
-    },
     {
       "title": "Email Summarizer (n8n)",
       "subtitle": "Automated weekly digest of top emails with AI",
@@ -61,10 +52,26 @@
       ],
       "image": "assets/images/projects/fema-companion.jpg",
       "overview": "### *Overview*\nA Retrieval-Augmented Generation (RAG) tool that makes\n**FEMA P-750** and **NIST GCR 2016** seismic design guidelines fully searchable. The system enables engineers to ask natural-language questions and receive precise, citation-backed answers.\n---\n### **Problem**\nSeismic codes are dense, technical, and difficult to navigate.\nEngineers spend significant time manually searching hundreds of pages, often missing important clauses. No existing solution provides fast, authoritative, clause-level lookup grounded directly in source documents.\n---\n### **Architecture Diagram (High-Level RAG Pipeline)**\n```mermaid\nflowchart LR\nA[User] --> B[Query Handler]\nB --> C[Vector Search]\nC --> D[\"Document Chunks <br> (FEMA / NIST)\"]\nD --> E[Embeddings]\nE --> F[LLM Reasoning]\nF --> G[\"Final Answer<br>+ Citations\"]\n```\n---\n### **Tech Stack**\n- LangChain\n- ChromaDB\n- OpenAI embeddings\n- GPT models\n- Python / Streamlit\n- PDF parsing with `pypdf`\n---\n### **Key Challenges**\n- Designing chunk sizes for technical engineering text\n- Preventing LLM hallucinations with strict grounding constraints\n- Ensuring consistent citation mapping\n- Handling mixed-format engineering documents\n---\n### **What I Learned**\n- How to build a complete RAG system end-to-end\n- How retrieval quality affects answer accuracy and trustworthiness\n- How to design usable AI tools for domain experts\n- How to enforce accuracy and grounding in engineering workflows\n---",
+      "demo_gif": "assets/images/projects/fema-companion.gif",
       "links": [],
       "-_demo": "",
       "-_repo": "",
       "slug": "fema-companion"
+    },
+    {
+      "title": "ParentPal – Custom GPT",
+      "subtitle": "AI knowledge assistant for seismic design (RAG)",
+      "tags": [
+        "openai",
+        "customGPT"
+      ],
+      "image": "assets/images/projects/parentpal-gpt.png",
+      "overview": "### *Overview*\nParentPal is an empathetic, safety-aligned AI parenting assistant grounded entirely in HealthyChildren.org (American Academy of Pediatrics). It delivers reliable, age-appropriate guidance for new parents.\n---\n### **Problem**\nParents are overwhelmed by contradictory online information. They need trusted, source-based advice—and AI models require strict guardrails to avoid unsafe recommendations.---\nArchitecture Diagram (Custom GPT with Safety Layer)\n```mermaid\nflowchart LR\nUser --> GPT[Custom GPT]\nGPT --> Rules[\"System Prompt: Safety + AAP-only Sources\"]\nRules --> Healthy[HealthyChildren.org Articles]\nHealthy --> GPT\nGPT --> User\n```\n---\n### **Tech Stack**\n- OpenAI Custom GPT builder\n- Safety guardrails + structured prompts\n- HealthyChildren.org\n- Retrieval constraints\n---\n### **Key Challenges**\n- Enforcing strict guardrails for medical-adjacent topics\n- Designing empathetic yet factual responses\n- Ensuring citations map to approved AAP content\n- Maintaining consistency across age groups\n---\n### **What I Learned**\n- How to design AI for safety-critical domains\n- How to structure system prompts with constraints\n- How to build trust through transparency\n- How empathy shapes UX in family-oriented tools\n---",
+      "demo_gif": "assets/images/projects/parentpal-gpt-demo.gif",
+      "links": [],
+      "-_demo": "",
+      "-_repo": "",
+      "slug": "parentpal"
     },
     {
       "title": "SalesSense AI",
@@ -122,5 +129,5 @@
     ],
     "download": "assets/resume/Nive_Venkat.pdf"
   },
-  "generatedAt": "2025-11-16T02:34:42.808Z"
+  "generatedAt": "2025-11-16T03:31:40.874Z"
 }
