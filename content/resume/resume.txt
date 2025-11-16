@@ -1,12 +1,12 @@
 tagline: Engineer-turned-strategist building AI-enabled products
 summary: Engineer-turned-strategist with 7+ years of experience designing complex infrastructure systems and building AI-enabled products. Combines structural engineering rigor with business analytics, product thinking, and hands-on AI development. Currently completing an MBA at NYU Stern, specializing in Business Analytics, Strategy, and Technology Product Management.
-download: assets/resume/Nive_Venkat.pdf
+download: assets/resume/Nive_Venkat_Resume.pdf
 
 skills:
-- Structural Engineering & Technical: STAAD Pro, RAM, ETABS, ANSYS, RISA-3D, AutoCAD, Revit, MicroStation, BIM, ENERCALC, SAP2000, MathCAD, ACI/AISC/ASCE Standards, QA/QC
 - Business & Strategy (MBA Coursework): Strategy, Operations Management, Tech Product Management, Digital Strategy, Corporate Finance, Financial Accounting, Marketing, Leadership, Negotiation, Decision Models
 - AI & Product Management: AI/LLM Systems, RAG, Custom GPTs, AI Agents, Prompt Engineering, Product Discovery, User Research, Product Roadmapping, MVP Scoping, Competitive Analysis, KPI Design, LangChain, Streamlit, n8n Automation, ChromaDB, Pinecone
 - Data & Analytics: SQL, Power BI, Tableau, Python, R Studio, Excel, MATLAB, C++, Statistics, Data Visualization, Digital Marketing Analytics, AI Applications in Business
+- Structural Engineering & Technical: STAAD Pro, RAM, ETABS, ANSYS, RISA-3D, AutoCAD, Revit, MicroStation, BIM, ENERCALC, SAP2000, MathCAD, ACI/AISC/ASCE Standards, QA/QC
 
 experience:
 - Structural Engineer — Carollo Engineers | Designed & managed multimillion-dollar water infrastructure projects; led cross-discipline coordination, construction support, and QA workflows; built dashboards and analytics tools used by design leadership; improved design review cycle time through data-driven process improvements.
