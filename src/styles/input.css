@@ -74,10 +74,10 @@ body[data-theme="dark"] #bg {
 main#app { padding: 40px 0 80px; }
 
 .hero {
-  display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 20px 32px; align-items: center;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center;
 }
-.hero-stacked { grid-template-rows: auto auto; align-items: start; }
-.hero-stacked .hero-media { grid-row: 1 / span 2; align-self: start; display: flex; justify-content: flex-end; }
+.hero-parallel { align-items: start; }
+.hero-parallel .hero-right { display: grid; gap: 16px; }
 .hero .card { padding: 24px 28px; border-radius: 18px; }
 .hero img { width: 100%; height: auto; max-width: 360px; border-radius: 20px; border: 1px solid var(--card-border); background: var(--image-bg); box-shadow: 0 18px 50px rgba(15, 23, 42, 0.18); object-fit: contain; }
 .kicker { color: var(--accent); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: 12px; }
@@ -171,8 +171,6 @@ main#app { padding: 40px 0 80px; }
 
 @media (max-width: 860px) {
   .hero { grid-template-columns: 1fr; }
-  .hero-stacked { grid-template-rows: auto; }
-  .hero-stacked .hero-media { grid-row: auto; height: auto; }
   .title { font-size: 32px; }
   .hero img { max-width: 100%; }
   main#app { padding: 24px 0 60px; }

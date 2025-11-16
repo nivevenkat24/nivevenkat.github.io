@@ -16,7 +16,7 @@ function parseSimpleText(txt) {
   const lines = normalize(txt).split('\n');
   let currentKey = null;
   const arrayKeys = new Set([
-    'highlights', 'interests', 'stack', 'focus', 'target_users', 'impact',
+    'highlights', 'interests', 'roles', 'stack', 'focus', 'target_users', 'impact',
     'skills', 'experience', 'education', 'links', 'tags', 'future', 'future_enhancements'
   ]);
 
@@ -46,7 +46,7 @@ function parseSimpleText(txt) {
         if (currentKey === 'links' && /:\s+/.test(item)) {
           const [label, ...rest] = item.split(':');
           const url = rest.join(':').trim();
-          data.links.push({ label: label.trim(), url });
+          data[currentKey].push({ label: label.trim(), url });
         } else {
           data[currentKey].push(item);
         }
