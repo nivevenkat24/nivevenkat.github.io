@@ -28,16 +28,6 @@ _If there’s data, I’ll analyze it._
 _And if there’s an opportunity to use AI to make life easier, I’m already building it._
 
 ---
-network: 
-
-I also love connecting with people on similar paths. I regularly mentor students exploring engineering, product, AI, studying abroad, or making early-career decisions. I enjoy helping early-stage startups think through ideas, and I support NGOs and mission-driven teams whenever I can.
-
-If you’d like to chat, brainstorm, or explore mentorship, feel free to book a time — I’m usually available on weekends:  
-
-👉 **[Book a meeting with me](https://calendar.app.google/F2uy288Db6Jw7Mft8)**
-
-I’m excited for what comes next and grateful that our paths crossed here.
----
 
 roles:
 - Product Management

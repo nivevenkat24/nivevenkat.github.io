@@ -1,59 +1,39 @@
+---
 title: Understand AI
-subtitle: Real-time sales intelligence agent (RAG + automation)
+subtitle: Meeting memory assistant (RAG + reasoning AI)
 tags:
-- n8n
-- openai
-- engineering
-- ollama
-image: assets/images/projects/sales-sense-ai.png
+- ai
+- rag
+- product-design
+image: assets/images/projects/understand-ai.png
 overview: 
+---
 
 ### **Overview**
-
-A RAG-powered AI agent that analyzes sales files, embeds them into a vector database, and enables conversational analysis of KPIs, performance trends, and competitor insights.
----
+Understand.AI is an AI-powered meeting memory system built for software engineering teams. It provides fast recall of decisions, rationale, action items, and historical context by unifying transcripts, Slack threads, and notes into a single searchable intelligence layer. The system is designed to help engineers spend less time digging through fragmented documentation and more time building.
 
 ### **Problem**
+Engineering teams lose hours each week trying to remember what was decided and where context lives. Information is scattered across Confluence, Jira, Slack, raw recordings, and personal notes—causing rework, misalignment, and slowed execution. Teams need a trusted, centralized memory with timestamps, decision history, and explanation paths so they can retrieve context instantly.
 
-Sales ops teams deal with scattered PDFs, Excel files, and decks. Answering even basic questions about growth or retention requires time-consuming manual work.
-
-### **Architecture Diagram (Sales RAG System)**
-
-```mermaid
-flowchart LR
-    A[Drive Folder] --> B[n8n Ingestion Pipeline]
-    B --> C[Embedding Pipeline]
-    C --> D[Vector DB]
-    D --> E[LLM Answer Engine]
-    E --> F[Chat UI]
-```
----
 ### **Tech Stack**
-- Python
-- n8n automation
-- Pinecone
-- LangChain
-- GPT models
-- Streamlit UI
-
----
+- Claude AI (reasoning & summarization)  
+- ChatGPT (generation, correction, refinement)  
+- Loavable (AI workflow + orchestration)  
+- Vector search (semantic retrieval)  
+- Meeting transcription (audio → text)  
+- Figma prototypes (UX flows, interaction design)  
+- Knowledge Graph (entity + decision linking, conceptual)
 
 ### **Key Challenges**
-- Normalizing unstructured sales files
-- Ensuring accurate KPI extraction
-- Updating embeddings as new files arrive
-- Avoiding hallucinations when data is missing
-
----
+- Building trust through timestamps, source snippets, and uncertainty indicators  
+- Designing an intuitive search experience that returns context quickly without overwhelming the user  
+- Handling long transcripts while surfacing only the decisions, rationales, blockers, and action items  
+- Balancing summary clarity vs. completeness for engineering audiences  
+- Creating product-led growth loops for cross-team adoption in large orgs (e.g., shareable AI summaries)
 
 ### **What I Learned**
-- How to operationalize data ingestion for business users
-- How RAG behaves with structured vs. unstructured data
-- How to design explainability into business AI tools
-- How to balance transparency with speed
-
----
-
-links:
-- demo: 
-- repo: 
+- How to design AI products specifically for developer workflows and cognitive patterns  
+- How trust signals (citations, timestamps, transcript excerpts, correction interfaces) dramatically improve adoption  
+- How to convert raw user pain points into validated UX flows through rapid prototyping  
+- How PLG motions differ between engineering tools and consumer AI products  
+- How to shape an AI product around reliability, transparency, and low-friction recall

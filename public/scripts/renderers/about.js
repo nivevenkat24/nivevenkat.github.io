@@ -54,19 +54,19 @@ export async function renderAbout(root) {
     root.appendChild(networkBlock);
   }
 
-  if (about.roles && about.roles.length) {
-    const roles = el(`
-      <section class="section">
-        <div class="card glass about-body">
-          <h2>Open to roles in</h2>
-          <div class="chips wrap">
-            ${(about.roles || []).map(i => `<span class="chip chip-muted">${renderInlineMarkdown(i)}</span>`).join('')}
-          </div>
-          </div>
-      </section>
-    `);
-    root.appendChild(roles);
-  }
+  // if (about.roles && about.roles.length) {
+  //   const roles = el(`
+  //     <section class="section">
+  //       <div class="card glass about-body">
+  //         <h2>Open to roles in</h2>
+  //         <div class="chips wrap">
+  //           ${(about.roles || []).map(i => `<span class="chip chip-muted">${renderInlineMarkdown(i)}</span>`).join('')}
+  //         </div>
+  //         </div>
+  //     </section>
+  //   `);
+  //   root.appendChild(roles);
+  // }
 
   if (about.interests && about.interests.length) {
     const interests = el(`

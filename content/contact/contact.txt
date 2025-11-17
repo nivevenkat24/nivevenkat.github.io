@@ -1,0 +1,15 @@
+title: Let's Connect
+body: I'm always excited to connect with people working on innovative products, AI applications, and big strategic challenges.
+
+
+I also enjoy supporting others on similar journeys. I regularly mentor students interested in engineering, product, AI, studying abroad, or navigating early-career decisions. I love helping early-stage startups brainstorm ideas, and I support mission-driven teams and NGOs whenever possible.
+
+If you’d like to chat, explore mentorship, or simply brainstorm, I’d be happy to connect — I’m usually available on weekends.
+
+Looking forward to what's ahead — and grateful that our paths have crossed.
+
+network:
+- Book a meeting with me: https://calendar.app.google/F2uy288Db6Jw7Mft8
+- Email Me: mailto:nv2357@stern.nyu.edu
+- LinkedIn: https://www.linkedin.com/in/nivedithaa
+- GitHub: https://github.com/nivevenkat24

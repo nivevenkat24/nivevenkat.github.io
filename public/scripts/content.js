@@ -5,6 +5,6 @@ export async function loadContent() {
   const res = await fetch('data.json', { cache: 'no-store' });
   if (!res.ok) throw new Error('Failed to load data.json');
   cache = await res.json();
+  cache.contact = cache.contact || null;
   return cache;
 }
-

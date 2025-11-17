@@ -16,7 +16,7 @@ function parseSimpleText(txt) {
   const lines = normalize(txt).split('\n');
   let currentKey = null;
   const arrayKeys = new Set([
-    'highlights', 'interests', 'roles', 'stack', 'focus', 'target_users', 'impact',
+    'highlights', 'interests', 'roles', 'network', 'stack', 'focus', 'target_users', 'impact',
     'skills', 'experience', 'education', 'links', 'tags', 'future', 'future_enhancements'
   ]);
 
@@ -25,6 +25,22 @@ function parseSimpleText(txt) {
   for (let i = 0; i < lines.length; i++) {
     const raw = lines[i].trim();
     if (!raw) continue;
+
+    if (raw.startsWith('- ')) {
+      const item = raw.slice(2).trim();
+      if (currentKey && arrayKeys.has(currentKey)) {
+        // links/network: support "label: url"
+        if ((currentKey === 'links' || currentKey === 'network') && /:\s+/.test(item)) {
+          const [label, ...rest] = item.split(':');
+          const url = rest.join(':').trim();
+          data[currentKey].push({ label: label.trim(), url });
+        } else {
+          data[currentKey].push(item);
+        }
+        continue;
+      }
+      // If not an array field, let the bullet fall through and be captured as text (Markdown list)
+    }
 
     const keyMatch = raw.match(/^([A-Za-z0-9_\- ]+):\s*(.*)$/);
     if (keyMatch) {
@@ -37,22 +53,6 @@ function parseSimpleText(txt) {
       }
       currentKey = key;
       continue;
-    }
-
-    if (raw.startsWith('- ')) {
-      const item = raw.slice(2).trim();
-      if (currentKey && arrayKeys.has(currentKey)) {
-        // links: support "label: url"
-        if (currentKey === 'links' && /:\s+/.test(item)) {
-          const [label, ...rest] = item.split(':');
-          const url = rest.join(':').trim();
-          data[currentKey].push({ label: label.trim(), url });
-        } else {
-          data[currentKey].push(item);
-        }
-        continue;
-      }
-      // If not an array field, let the bullet fall through and be captured as text (Markdown list)
     }
 
     // Multiline text for certain keys
@@ -74,6 +74,12 @@ async function readIfExists(p) {
 
 async function loadAbout() {
   const p = path.join(CONTENT_DIR, 'about', 'about.txt');
+  const txt = await readIfExists(p);
+  return txt ? parseSimpleText(txt) : null;
+}
+
+async function loadContact() {
+  const p = path.join(CONTENT_DIR, 'contact', 'contact.txt');
   const txt = await readIfExists(p);
   return txt ? parseSimpleText(txt) : null;
 }
@@ -106,10 +112,11 @@ async function main() {
   const about = await loadAbout();
   const projects = await loadProjects();
   const resume = await loadResume();
+  const contact = await loadContact();
 
   await ensureDir(PUBLIC_DIR);
 
-  const payload = { about, projects, resume, generatedAt: new Date().toISOString() };
+  const payload = { about, projects, resume, contact, generatedAt: new Date().toISOString() };
   await fs.writeFile(OUTPUT, JSON.stringify(payload, null, 2), 'utf8');
   console.log(`Wrote ${OUTPUT}`);
 }

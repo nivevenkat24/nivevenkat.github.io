@@ -2,6 +2,7 @@ import { initRouter } from './router.js';
 import { renderAbout } from './renderers/about.js';
 import { renderProjects } from './renderers/projects.js';
 import { renderResume } from './renderers/resume.js';
+import { renderContact } from './renderers/contact.js';
 
 const app = document.getElementById('app');
 const underline = document.querySelector('.tab-underline');
@@ -24,5 +25,5 @@ initRouter({
   about: () => renderAbout(app),
   projects: () => renderProjects(app),
   resume: () => renderResume(app),
+  contact: () => renderContact(app),
 }, setActiveTab);
-

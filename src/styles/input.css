@@ -148,6 +148,17 @@ main#app { padding: 40px 0 80px; }
 .resume-card strong { color: #0f172a; font-weight: 700; }
 .resume-card em { color: var(--muted); font-style: normal; font-weight: 600; }
 
+.contact-hero { text-align: center; padding: 28px; gap: 8px; background: linear-gradient(180deg, #f8fbff, #f0f6fb); border-radius: 18px; }
+.contact-title { margin: 0; color: #0ea5a5; font-size: 36px; }
+.contact-subtitle { margin: 6px 0 0; color: #475569; font-size: 18px; }
+.contact-card { padding: 24px; border-radius: 16px; border: 1px solid #dce4ea; box-shadow: 0 14px 32px rgba(15, 23, 42, 0.08); text-align: left; background: #ffffff; }
+.contact-body { margin: 0 0 18px; }
+.contact-card .markdown-body { color: var(--text); }
+.contact-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+.contact-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 18px; border-radius: 12px; border: 1px solid #dce4ea; background: #0ea5a5; color: #ffffff; text-decoration: none; font-weight: 600; min-width: 120px; }
+.contact-btn:hover { filter: brightness(0.95); }
+.contact-btn.ghost { background: #fff; color: #0f172a; }
+
 .muted { color: var(--muted); }
 
 .markdown-body { display: grid; gap: 12px; color: var(--muted); font-weight: 400; font-size: 17px; }
