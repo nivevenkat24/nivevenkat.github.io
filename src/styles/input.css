@@ -161,7 +161,7 @@ main#app { padding: 40px 0 80px; }
 
 .muted { color: var(--muted); }
 
-.markdown-body { display: grid; gap: 12px; color: var(--muted); font-weight: 400; font-size: 17px; }
+.markdown-body { display: grid; gap: 12px; color: var(--muted); font-weight: 400; font-size: 20px; }
 .markdown-body * { font-weight: 400; }
 .markdown-body p { margin: 0; color: inherit; font-weight: 400; }
 .markdown-body ul,
@@ -179,6 +179,10 @@ main#app { padding: 40px 0 80px; }
 .markdown-body pre { margin: 0; background: var(--image-bg); padding: 12px; border-radius: 10px; border: 1px solid var(--card-border); overflow: auto; color: var(--text); }
 .markdown-body blockquote { margin: 0; border-left: 3px solid var(--card-border); padding-left: 10px; color: inherit; }
 .markdown-body hr { border: 0; border-top: 1px solid var(--card-border); margin: 4px 0; }
+
+/* ensure markdown in cards keeps font sizing over card <p> defaults */
+.card .markdown-body p,
+.card .markdown-body li { font-size: 20px; color: var(--muted); }
 
 @media (max-width: 860px) {
   .hero { grid-template-columns: 1fr; }
