@@ -26,10 +26,13 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install (no deps) and Build content
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Sanity check content and build
         run: |
           node --version
-          npm run build --if-present || node scripts/build-content.mjs
+          npm run test:content
           mkdir -p public
           echo > public/.nojekyll
 
@@ -48,4 +51,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
