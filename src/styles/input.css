@@ -221,6 +221,20 @@ main#app { padding: 40px 0 80px; }
 .card .markdown-body p,
 .card .markdown-body li { font-size: 20px; color: var(--muted); }
 
+@media (max-width: 720px) {
+  /* Keep header elements aligned and tappable on narrow screens */
+  .site-header { padding: 6px 0; }
+  .nav { flex-direction: column; align-items: stretch; gap: 10px; padding: 10px 0; }
+  .brand { width: 100%; justify-content: space-between; }
+  .brand-name { font-size: 18px; }
+
+  .actions { width: 100%; gap: 12px; justify-content: space-between; }
+  .tabs { flex: 1; overflow-x: auto; padding: 6px 4px; gap: 8px; }
+  .tab { white-space: nowrap; padding: 10px 10px; }
+  .tab-underline { display: none; }
+  .icon-button { flex-shrink: 0; }
+}
+
 @media (max-width: 860px) {
   .hero { grid-template-columns: 1fr; }
   .title { font-size: 32px; }
